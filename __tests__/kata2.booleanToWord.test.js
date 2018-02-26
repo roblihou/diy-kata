@@ -1,5 +1,11 @@
 import { booleanToWord } from '../src'
 
 describe('booleanToWord', () => {
-  // how do we create specs again???
+  it('returns Yes when given true boolean', () => {
+    expect(booleanToWord(true)).toEqual('Yes');
+  })
+
+  it('returns No when given false boolean', () => {
+    expect(booleanToWord(false)).toEqual('No');
+  })
 })
